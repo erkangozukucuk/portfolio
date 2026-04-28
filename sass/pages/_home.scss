@@ -126,6 +126,68 @@
 }
 
 .projects {
+  &__filter {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 7rem;
+  }
+
+  &__filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    padding: 1rem 2.8rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+    border: 2px solid $themeClrPrimary;
+    border-radius: 50px;
+    background: transparent;
+    color: $themeClrPrimary;
+    cursor: pointer;
+    transition: background .25s, color .25s, box-shadow .25s;
+
+    svg {
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      background: rgba($themeClrPrimary, .08);
+    }
+
+    &--active {
+      background: $themeClrPrimary;
+      color: #fff;
+      box-shadow: 0 4px 18px rgba($themeClrPrimary, .35);
+
+      &:hover {
+        background: $themeClrPrimary;
+      }
+    }
+  }
+
+  &__category-badge {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: .4rem 1.2rem;
+    border-radius: 50px;
+    margin-bottom: 1.4rem;
+
+    &--web {
+      background: rgba($themeClrPrimary, .1);
+      color: $themeClrPrimary;
+    }
+
+    &--mobile {
+      background: rgba(#e8611a, .1);
+      color: #e8611a;
+    }
+  }
+
   &__row {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
