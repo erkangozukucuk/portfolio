@@ -188,6 +188,22 @@
     }
   }
 
+  &__tech-stack {
+    margin-bottom: 1rem;
+
+    .skills {
+      margin-top: .8rem;
+    }
+  }
+
+  &__tech-label {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #999;
+  }
+
   &__store-links {
     display: flex;
     gap: 1.2rem;
